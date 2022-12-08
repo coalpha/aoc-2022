@@ -1,5 +1,5 @@
 %.exe: %.cr
-	cd $(dir $<) & crystal run --no-debug $(notdir $<)
+	cd $(patsubst %/,%,$(dir $<)) & crystal run --no-debug $(notdir $<)
 
 p1%: dec%/p1.exe
 	-

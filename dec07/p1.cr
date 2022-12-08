@@ -5,7 +5,7 @@ ruut.name = "/"
 
 cd : PDir = ruut
 
-File.each_line("example.txt") do |line|
+File.each_line("input.txt") do |line|
    words = line.split " "
    if words.size == 2
       fst, snd = words
@@ -59,3 +59,21 @@ File.each_line("example.txt") do |line|
 end
 
 puts ruut
+
+MAX = 100000
+sum_of_dirs = 0_u32
+
+ruut.traverse do |dirent|
+   case dirent
+   in PFile
+   in PDir
+      size = dirent.disk_size
+      if size <= MAX
+         sum_of_dirs += size
+      end
+   in PDirent
+      raise Exception.new "fuck this stupid-ass language"
+   end
+end
+
+puts "Sum of directories with size <= #{MAX} is #{sum_of_dirs}"
