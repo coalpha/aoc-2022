@@ -1,13 +1,16 @@
 # advent of code 2022
 
-Haha yes, more work.
-
-## how to compile scry
-
-1. make sure you're running the shards command as admin because it wants to symlink
-2. fix the crystal compiler https://github.com/crystal-lang/crystal/issues/12421#issue-1353287566
-3. don't use scry because it's bad
+*In Crystal.*
 
 ## sister projects
 
 - [@trholdridge/advent-of-code/aoc-2022](https://github.com/trholdridge/advent-of-code/tree/main/aoc-2022)
+
+## takeaways
+
+I am never going to use Crystal again. Besides the shockingly poor tooling,
+Windows support was never a priority which is a dealbreaker for me.
+
+The language itself is thoroughly object oriented in a way that I don't really
+like. I could see how some people'd like the "Ruby" style of object orientedness
+but this shit's really not for me.
