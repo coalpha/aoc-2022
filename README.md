@@ -1,6 +1,6 @@
 # advent of code 2022
 
-*In Crystal.*
+*In Crystal and Golfed JS*
 
 ## sister projects
 
